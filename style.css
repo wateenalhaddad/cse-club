@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("cs-club.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* Register Button */
+.register-btn {
+    position: absolute;
+
+    /* غيري هذي الأرقام حسب مكان الزر في تصميم Canva */
+    left: 50%;
+    bottom: 20%;
+
+    transform: translateX(-50%);
+
+    padding: 30px 70px;
+
+    background-color: white;
+    color: #222;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+    border: 3px solid #222;
+    border-radius: 8px;
+
+    box-shadow: 5px 5px 0px #222;
+
+    cursor: pointer;
+}
+
+/* لما تحطين الماوس على الزر */
+.register-btn:hover {
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 7px 7px 0px #222;
+}
+
+/* لما تضغطين الزر */
+.register-btn:active {
+    transform: translateX(-50%) translateY(2px);
+    box-shadow: 2px 2px 0px #222;
+}
